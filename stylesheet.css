@@ -1,0 +1,359 @@
+/* Body styling */
+body {
+    background-color: #0c0c0c;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: auto; /* Remove default margin */
+}
+
+/* Container styling for different sections */
+.section__container {
+    max-width: 2200px; /* Adjusted for better readability */
+    margin: auto;
+    padding: 40px;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+.section__header {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem; /* Increased font size */
+    text-align: center;
+    color: #e9615e;
+}
+
+/* Description styling for various sections */
+.section__description {
+    max-width: 800px; /* Adjusted for better readability */
+    margin: auto;
+    color: #ccc;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/* Button styling */
+.btn {
+    padding: 1.5rem 3rem; /* Increased padding for larger button */
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #e9615e;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Improved button hover effect */
+.btn:hover {
+    background-color: #e9615e;
+}
+
+/* Image styling */
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Logo styling */
+.logo {
+    display: inline-block;
+    padding: 10px 14px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth scroll behavior */
+html, body {
+    scroll-behavior: smooth;
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation styling */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #1f1f1f;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.nav__bar {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+    color: #ec9956;
+}
+
+/* Animation */
+.nav__links a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #ec9956;
+    transition: width 0.3s ease;
+}
+
+.nav__links a:hover::after {
+    width: 100%;
+}
+
+/* Optional: Style the active link differently */
+.nav__links a.active {
+    color: #ec9956;
+}
+
+/* Large button styling */
+.btn__large {
+    display: none;
+}
+
+/* Header container styling */
+.header__container {
+    padding-top: 4rem;
+    display: grid;
+    gap: 2rem;
+}
+
+/* Header content styling */
+.header__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35rem;
+    margin-right: 0rem;
+}
+
+/* Header text styling */
+.header__text {
+    flex: 1;
+}
+
+/* Header title styling */
+.header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+/* Header subtitle styling */
+.header__content h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #e9615e;
+    text-align: left;
+}
+
+/* Header description styling */
+.header__description {
+    flex: 1;
+    margin-left: 20px; /* Added margin to the left for spacing */
+}
+
+/* Header button styling */
+.header__btn {
+    margin-top: 20px; /* Added margin to the top for spacing */
+}
+
+/* Profile picture styling */
+.profile-picture {
+    display: block;
+    max-width: 400px;
+    border-radius: 40%;
+    margin-left: auto;
+    margin-top: 3rem;
+    
+}
+
+/* Header image styling */
+.header__image {
+    position: relative;
+    z-index: -1;
+}
+
+/* Header image style */
+.header__image img {
+    max-width: 600px; /* Adjusted size */
+    margin-inline: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pseudo-element styling for header image */
+.header__image::after {
+    position: absolute;
+    content: "Bansari";
+    letter-spacing: 1.5rem;
+    opacity: 0.5;
+    right: 1rem;
+    top: 50%;
+    transform: translate(50%, -50%) rotate(90deg);
+}
+
+/* Responsive media query for larger screens */
+@media (min-width: 768px) {
+    /* Navigation links styling */
+    .nav__bar a {
+        font-size: 1.2rem;
+    }
+
+    /* Navigation links container styling */
+    .nav__links {
+        padding: 0;
+        width: unset;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        background-color: #1f1f1f;
+    }
+
+    /* Styling for open navigation links */
+    .nav__links.open {
+        transform: translateY(0);
+    }
+
+    /* Navigation link styling */
+    .nav__links a {
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    /* Navigation link hover effect */
+    .nav__links a:hover {
+        color: #e9615e;
+    }
+
+    /* Hide last link on larger screens */
+    .nav__links li:last-child {
+        display: none;
+    }
+
+    /* Display large button on larger screens */
+    .btn__large {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 1.5rem 3rem;
+    }
+
+    /* Header container styling for larger screens */
+    .header__container {
+        padding-top: 5rem;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: left;
+    }
+
+    /* Header image styling for larger screens */
+    .header__image img {
+        margin-inline-start: unset;
+    }
+
+    /* Header content styling for larger screens */
+    .header__content {
+        grid-area: 1/1/2/4;
+        text-align: left;
+    }
+
+    /* Header title styling for larger screens */
+    h1,h2 {
+        font-size: 4rem;
+        line-height: 4rem;
+        text-align: left;
+    }
+
+   
+
+    /* Header description styling for larger screens */
+    .header__content .section__description {
+        text-align: center;
+        margin-inline-start: unset;
+    }
+}
+
+/* Portfolio Section Styles */
+.portfolio__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio__card {
+    flex: 1 0 300px; /* Adjusted flex properties */
+}
+
+.portfolio__card img {
+    border-radius: 10px;
+}
+
+/* About Me Section Styles */
+.about__container {
+    text-align: center;
+}
+
+/* Footer Section Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* About Me Section Styles */
+.about__container {
+    text-align: center;
+}
+
+.about__btn .btn {
+    background-color: #e9615e; /* Set a custom color for the button */
+    color: #fff; /* Set text color to white */
+    
+}
+
+
+
+.about__btn .btn:hover {
+    background-color: #e9615e; /* Set hover color */
+}
+
+/* Download CV Button Styles */
+.about__btn .btn a {
+    color: #fff; 
+    text-decoration: none;
+}
