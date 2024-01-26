@@ -19,7 +19,8 @@ body {
 /* Header styling */
 .section__header {
     margin-bottom: 1.5rem;
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 3rem
+    ; /* Increased font size */
     text-align: center;
     color: #e9615e;
 }
